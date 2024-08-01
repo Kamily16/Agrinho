@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Piadas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contador de Piadas</h1>
+    <h2>Adicione um pouco de humor ao seu dia!</h2>
+    <div class="joke">Sabe qual é a cidade que não tem taxi?</div>
+    <button onclick="showAnswer()">Qual?</button>
+    <div class="answer">
+        Uberlândia.
+        <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="GIF alegre">
+    </div>
+
+    <script>
+        function showAnswer() {
+            document.querySelector('.answer').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
