@@ -5,12 +5,31 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #ffeb3b; /* Fundo amarelo */
-    transition: background-color 0.5s; /* Transição de cor de fundo */
+    background: linear-gradient(45deg, #ffeb3b, #ff5722); /* Gradiente de fundo */
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite; /* Animação de gradiente */
+    overflow: hidden; /* Evita barras de rolagem causadas pelos confetes */
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca o efeito de partículas atrás do conteúdo */
 }
 
 .container {
     text-align: center;
+    z-index: 1; /* Coloca o conteúdo acima do fundo */
+    position: relative;
 }
 
 h1 {
