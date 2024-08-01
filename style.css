@@ -1,12 +1,46 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
+    background-color: #ffeb3b; /* Fundo amarelo */
 }
-header {
-    background-color: #0066cc;
-    color: white;
-    padding: 10px 0;
+h1 {
+    color: #e91e63; /* Rosa forte */
+}
+h2 {
+    color: #ff9800; /* Laranja */
+    margin-bottom: 20px;
+}
+.joke {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #8bc34a; /* Verde */
+}
+.answer {
+    font-size: 1.2em;
+    color: #03a9f4; /* Azul claro */
+    margin-top: 20px;
+    display: none;
     text-align: center;
+}
+.answer img {
+    margin-top: 10px;
+    max-width: 200px;
+}
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5722; /* Laranja escuro */
+    color: white;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #e64a19; /* Laranja mais escuro */
 }
