@@ -1,3 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Bem-vindo à Itália!');
-});
+function showAnswer() {
+    document.querySelector('.answer').style.display = 'block';
+}
+
