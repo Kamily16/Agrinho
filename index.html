@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contador de Piadas</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Inclua o script da biblioteca canvas-confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
-    <h1>Contador de Piadas</h1>
-    <h2>Adicione um pouco de humor ao seu dia!</h2>
-    <div class="joke">Sabe qual é a cidade que não tem taxi?</div>
-    <button onclick="showAnswer()">Qual?</button>
-    <div class="answer">
-        Uberlândia.
-        <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="GIF alegre">
+    <div class="container">
+        <h1>Contador de Piadas</h1>
+        <h2>Adicione um pouco de humor ao seu dia!</h2>
+        <div class="joke">Sabe qual é a cidade que não tem taxi?</div>
+        <button id="jokeButton">Qual?</button>
+        <button id="backButton" class="hidden">Voltar</button>
+        <div class="answer" id="answer">
+            <p>Uberlândia.</p>
+            <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" alt="GIF alegre">
+        </div>
     </div>
-
-    <script>
-        function showAnswer() {
-            document.querySelector('.answer').style.display = 'block';
-        }
-    </script>
+    <!-- Inclua seu script personalizado no final -->
+    <script src="script.js"></script>
 </body>
 </html>
+
