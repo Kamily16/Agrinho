@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function showConfetti() {
     if (typeof confetti === 'function') {
         confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
+            particleCount: 200, // Número de partículas
+            spread: 70, // Largura da dispersão dos confetes
+            origin: { y: 0.6 } // Origem do efeito de confetes
         });
     } else {
         console.error('Confetti function is not defined');
